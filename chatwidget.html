@@ -1,0 +1,135 @@
+
+<body>
+<link rel="stylesheet" href="chatwidget.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<div class="widget">
+    <img class="mainwidget" src="freshchat-dew.png">
+</div>
+<div class="container">
+    <div class="widgettop">
+        <!-- <i class="fa fa-arrow-left"></i> -->
+        <i class="material-icons indexicon">chat</i>
+        <i class="material-icons arrow">arrow_back</i>
+        <i class="material-icons close">close</i>
+          <div class="headtitle indexheading">Message Us</div>
+          <div class="titlestatus indexheading">Hi there! We'd love to help you out!</div> 
+           <div class="headtitle productdemotop">Product demo</div>
+           <div class="titlestatus productdemotop">We’re currently away. Please leave us a message!</div> 
+           <div class="headtitle productfeedback" >Product Feedback</div>
+           <div class="titlestatus productfeedback">We’re currently away. Please leave us a message!</div> 
+           <div class="headtitle pricingbilling" >Pricing Billing</div>
+           <div class="titlestatus pricingbilling">We’re currently away. Please leave us a message!</div> 
+           <div class="headtitle support" >Support</div>
+           <div class="titlestatus support">Currently replying in few hours</div> 
+    </div>
+    <div class="chatbox">
+             <img class="inboxicon" src="freshchat-dew.png">
+            <p class="rcorners1 demo">🙌 Let’s talk about your messaging needs.  Ask us any product questions you have and also request for your personalized demo.</p>
+            <p class="rcorners1 feedback">👋We're all ears for feedback. Your opinion matters to us and we'd love to hear your thoughts to make the product better. </p>
+            <p class="rcorners1 price"> Reach out to us in case you have any questions on pricing and billing here.</p>
+            <p class="rcorners1 supportchat">Hello there! 👋 Need help? Reach out to us right here !!</p>
+            <input type="text" class="inputfield" placeholder="Reply here...">
+            <div class="inputicons">
+                <i class="material-icons insertemoji">insert_emoticon</i>
+                <i class="material-icons attach">attach_file</i>
+            </div>
+           
+    </div>
+    <div class="chatindex">  
+        <div class="category1"> 
+            <img class="productdemo" src="productdemo.png"/>
+            <div class="channelname">Product demo</div>
+            <div class ="description">👋Hello.</div>   
+        </div>
+        <div class="category1"> 
+            <img class="productdemo" src="messeneger.png"/>
+            <div class="channelname">Product Feedback</div>
+            <div class ="description">👋 We're all ears for feedback. Your ...</div>   
+        </div>
+        <div class="category1"> 
+                <img class="productdemo" src="pricingbilling.png">
+                <div class="channelname">Pricing Billing</div>
+                <div class ="description">Reach out to us in case you have an...</div>   
+         </div>
+         <div class="category1"> 
+                <img class="productdemo" src="support.png">
+                <div class="channelname">Support</div>
+                <div class ="description">Hello there! 👋 Need help? Reach ou..</div>   
+         </div>
+    </div>
+
+<div class="frequentlyasked">
+    <div class="row">
+    <div class="card1">
+            <img class="modernmessenger" src="modernmessenger.png"> 
+            <div class="faqdescription">Modern Messenger</div>
+    </div>
+    <div class="card1">
+            <img class="modernmessenger" src="convertvisitors.png"> 
+            <div class="faqdescription">Convert Visitors</div>
+    </div>
+     <div class="card1">
+             <img class="modernmessenger" src="deleightusers.png"> 
+             <div class="faqdescription">Deleight User</div>
+     </div>
+     <div class="card1">
+             <img class="modernmessenger" src="pricing and billing faq.png"> 
+             <div class="faqdescription">Pricing and billing</div>
+    </div>
+    <div class="card1">
+            <img class="modernmessenger" src="comparisons.png"> 
+            <div class="faqdescription">Comparisons</div>
+    </div>
+    <div class="card1">
+            <img class="modernmessenger" src="mobilesdk.png"> 
+            <div class="faqdescription">Mobile SDK and Integrations</div>
+    </div>
+    <div class="card1">
+            <img class="modernmessenger" src="reportingdashboard.png"> 
+            <div class="faqdescription">Reporting and Dashboard</div>
+    </div>
+    </div>
+</div>
+
+<div class="frequentlyaskedpage">
+    <div class="faqquestion"> 
+            <img class="questionicon" src="faq.svg"/>
+            <div class="question">Is Freshchat just another live chat tool?</div>  
+     </div>
+     <div class="faqquestion"> 
+            <img class="questionicon" src="faq.svg"/>
+            <div class="question">What are Message Channels?</div>  
+     </div>
+     <div class="faqquestion"> 
+            <img class="questionicon" src="faq.svg"/>
+            <div class="question">What are Integrated FAQs?</div>  
+     </div>
+</div>
+   
+    <div class="widgetbottom">
+           <div class="chat">
+           <i class="material-icons chaticon">chat</i> CHAT
+            </div> 
+            <div class="faq">
+            <i class="fa fa-file-text-o"></i>FAQ
+            </div>           
+    </div>   
+</div>
+<script>
+$(document).ready(function(){
+    $(".mainwidget").click(function(){
+        $(this).fadeOut();
+        $(".container").fadeIn();
+        $(".inputfield" ).focus();
+    });
+    $(".close").click(function(){
+        $(".container").fadeOut();
+        $(".mainwidget").fadeIn();
+    });
+});
+</script>
+</body>
+
+
